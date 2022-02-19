@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--CSS Styles -->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <!-- Favicons -->
+
+    <!-- Animate CSS CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <title>Minh Bui</title>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav>
+      <h1>MINH BUI</h1>
+      <ul class="navigation">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <!-- <li><a href="#contact" class="nav-link">Contact</a></li> -->
+      </ul>
+      <button class="burger-menu" id="burger-menu">
+        <ion-icon class="bars" name="menu-outline"></ion-icon>
+        <!-- <ion-icon class="times" name="close-outline"></ion-icon> -->
+      </button>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="about">
+      <img
+        src="assets/images/wfh_1.svg"
+        alt="jane-doe"
+        loading="lazy"
+        class="hero-img"
+      />
+      <div class="bio animate__animated animate__shakeX">
+        <h2 class="bio-title">About Me</h2>
+        <p class="bio-text">
+          Hi 👋, I’m Minh Bui, a Computer Science and Environmental Studies double major.
+        </p>
+      </div>
+    </section>
+
+    <!-- More about -->
+    <section class="more-about">
+      <h2>More About Me</h2>
+      <p>
+        Ever since I made my first full-stack chat application, I’ve been living and breathing code, trying to get my hands on as many new frameworks and technologies as possible.
+      </p>
+      <p>
+        I have extensive experience with Java, C, Python and the Model View Controller (MVC) design pattern through class projects. As a hobby, I picked up HTML, CSS, Javascript, React, PHP, and SQL, and had the chance to cultivate my proficiency in these languages in a professional setting. I’m still enthusiastically grabbing onto any other programming languages, frameworks, or principles in order to continue my growth as a programmer.
+      </p>
+    </section>
+
+    <!-- Skills section -->
+    <section class="skills" id="skills">
+      <h2 class="skill-header">My Top Skills</h2>
+
+      <div class="skills-wrapper">
+        <div class="first-set animate__animated animate__pulse">
+          <img
+            src="assets/icons/icons8-javascript.svg"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+          <img
+            src="assets/icons/icons8-html-5.svg"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+          <img
+            src="assets/icons/icons8-css3.svg"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+        </div>
+
+        <div class="second-set animate__animated animate__pulse">
+          <img
+            src="assets/icons/icons8-java.svg"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+          <img
+            src="assets/icons/icons8-react.svg"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+          <img
+            src="assets/icons/icons8-python.svg"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects section -->
+    <section class="projects" id="projects">
+      <h2 class="projects-title">Some of my Recent Projects</h2>
+      <div class="projects-container">
+        <div class="project-container project-card">
+          <img
+            src="assets/images/dino.png"
+            alt="expense-tracker"
+            loading="lazy"
+            class="project-pic"
+          />
+          <p></p>
+          <h3 class="project-title">Google Dinosaur Game Clone</h3>
+          <p class="project-details">
+          This game is inspired by Google Dinosaur Game. However, in this version the dinosaur won’t die right away after it hit a cactus, but its health bar will drain instead
+          </p>
+          <a href="https://buiminh1995.github.io/dinosaur-game/" target="_blank" class="project-link">Check it Out</a>
+          <p></p>
+          <a href="https://github.com/buiminh1995/dinosaur-game" target="_blank" class="project-link">Github repo</a>
+        </div>
+        <div class="project-container project-card">
+          <img
+            src="assets/images/chat-app.png"
+            alt="netflic-clone"
+            loading="lazy"
+            class="project-pic"
+          />
+          <h3 class="project-title">Chat Application</h3>
+          <p class="project-details">
+            A chat app that allows users to create an account, sign in, and send messages to other users. 
+            Made with Javascript, HTML, CSS, and Firebase.
+          </p>
+          <a href="https://youthful-morse-93aad5.netlify.app" target="_blank" class="project-link">Check it Out</a>
+          <p></p>
+          <a href="https://github.com/buiminh1995/Chat-app" target="_blank" class="project-link">Github repo</a>
+        </div>
+        <div class="project-container project-card">
+          <img
+            src="assets/images/PHP-logo.svg.png"
+            alt="greeny-earth"
+            loading="lazy"
+            class="project-pic"
+          />
+          <h3 class="project-title">PHP Website</h3>
+          <p class="project-details">
+            A web app written in HTML and PHP. Wrote PHP code to interact with a SQL database.
+            Structured the project based on MVC design pattern
+          </p>
+          <p></p>
+          <p></p>
+          <p></p>
+          <a href="https://github.com/buiminh1995/PHP-web-project" target="_blank" class="project-link">Github repo</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact section
+    <section class="contact" id="contact">
+      <h2>Get In Touch With Me</h2>
+      <div class="contact-form-container">
+        <div class="contact-form">
+          <form action="https://formspree.io/f/xyylnggw" method="POST">
+            <div class="form-control">
+              <label for="name">Name</label>
+              <input
+                type="text"
+                id="name"
+                name="sender-name"
+                placeholder="Enter Your Name"
+                class="input-field"
+                required
+              />
+            </div>
+            <div class="form-control">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="sender-email"
+                placeholder="Enter Your Email"
+                class="input-field"
+                required
+              />
+            </div>
+            <div class="form-control">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                cols="60"
+                rows="10"
+                placeholder="Enter Your Message"
+                name="message"
+                class="input-field"
+                required
+              ></textarea>
+            </div>
+            <input
+              type="submit"
+              value="Submit"
+              id="submit-btn"
+              class="submit-btn"
+            />
+          </form>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- Social accounts - Fixed to the right -->
+    <div class="socials">
+      <a href="https://www.linkedin.com/in/minhbui19/" target="_blank"
+        ><img
+          src="assets/icons/icons8-linkedin-circled.gif"
+          alt="Linkedin"
+          loading="lazy"
+          class="socicon"
+      /></a>
+      <a href="https://github.com/buiminh1995" target="_blank"
+        ><img src="assets/icons/icons8-github.gif" alt="Github" class="socicon"
+      /></a>
+    </div>
+
+    <!-- Scroll to top -->
+    <i class="scroll-up" id="scroll-up"
+      ><img
+        src="assets/icons/icons8-upward-arrow.gif"
+        class="socicon up-arrow"
+        alt=""
+    /></i>
+
+    <!-- Footer section -->
+    <footer>
+    </footer>
+
+    <!-- Website scripts -->
+    <script src="assets/js/app.js"></script>
+
+    <!-- Ion icons scripts -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
